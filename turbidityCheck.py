@@ -1,9 +1,9 @@
 import cv2
 
 #import images
-imgLeftTestTube = cv2.imread("left test tube.jpeg", cv2.IMREAD_GRAYSCALE)
-imgRightTestTube = cv2.imread("right test tube gray scale.jpeg", cv2.IMREAD_GRAYSCALE)
-imgBackground= cv2.imread("background sample.jpeg", cv2.IMREAD_GRAYSCALE)
+imgLeftTestTube = cv2.imread("samplePhotos/left test tube.jpeg", cv2.IMREAD_GRAYSCALE)
+imgRightTestTube = cv2.imread("samplePhotos/right test tube gray scale.jpeg", cv2.IMREAD_GRAYSCALE)
+imgBackground= cv2.imread("samplePhotos/background sample.jpeg", cv2.IMREAD_GRAYSCALE)
 
 #take average grayscale value of all three images
 leftmean = cv2.mean(imgLeftTestTube, mask=None)[0]
